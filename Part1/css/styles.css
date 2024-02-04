@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Workbench);
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+
+#top {
+    visibility: hidden;
+    position: absolute;
+}
+
+.wrapper {
+    background-color: #999;
+    padding: 5px;
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+
+    grid-template-areas:
+        "top top top"
+        "left center right"
+        "left center right"
+        "bottom bottom bottom";
+
+}
+
+.wrapper div {
+    background-color: #EEE;
+    text-align: center;
+    padding: 10px;
+}
+
+.one {
+    grid-column: 1 / 4;
+    grid-area: top;
+}
+
+.end {
+    grid-area: bottom;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two, .three, .four {
+    border: 1px dashed black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    font-family: 'Workbench', serif;
+    font-size: 20pt;
+    background-color: #835a81;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    font-size: 18px;
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(74, 151, 164);
+}
+
+main {
+    font-family: 'Trirong', serif;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+
+}
+
+figure {
+    margin: 10px;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
